@@ -43,7 +43,7 @@ Garbage Dataset: **https://www.kaggle.com/datasets/sumn2u/garbage-classification
 
 ---
 
-## ⚙️ Model Training Configuration
+## Model Training Configuration
 
 | Parameter | Value |
 |------------|--------|
@@ -55,10 +55,10 @@ Garbage Dataset: **https://www.kaggle.com/datasets/sumn2u/garbage-classification
 
 ---
 
-## 🧰 Dependencies
+## Dependencies
 
-| **tensorflow**
-| **opencv-python**
-| **numpy** 
-| **pyttsx3**
-| **matplotlib**
+- **tensorflow**
+- **opencv-python**
+- **numpy** 
+- **pyttsx3**
+- **matplotlib**
