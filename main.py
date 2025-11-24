@@ -12,16 +12,16 @@ model = tf.keras.models.load_model('waste_classifier_model.h5')
 class_names = ['paper', 'plastic', 'shoes', 'cardboard', 'clothes', 'metal', 'trash', 'biological', 'glass', 'battery']
 
 bin_dict = {
-    'paper': 'Paper recycling bin',
-    'plastic': 'Plastic recycling bin',
-    'shoes': 'Reusable items bin or textile donation box',
-    'cardboard': 'Paper recycling bin',
-    'clothes': 'Textile recycling bin or donation box',
-    'metal': 'Metal recycling bin',
-    'trash': 'General waste bin',
-    'biological': 'Organic compost bin',
-    'glass': 'Glass recycling bin',
-    'battery': 'Hazardous waste bin (battery disposal point)'
+    "paper": "dry_recyclable_bin",
+    "glass": "glass_recycling_bin",
+    "clothes": "textile_collection_bin",
+    "shoes": "textile_collection_bin",
+    "trash": "general_waste_bin",
+    "battery": "hazardous_waste_bin",
+    "cardboard": "dry_recyclable_bin",
+    "plastic": "plastic_recycling_bin",
+    "metal": "metal_recycling_bin",
+    "biological": "organic_compost_bin"
 }
 
 cap = cv2.VideoCapture(0)  # 0 for webcam, or give video path
@@ -49,4 +49,5 @@ while True:
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
